@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "天气预报",
+  "description": "一款精美的天气预报，查看未来7天天气",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "天气预报"
+  },
+  "background": {
+    "scripts": ["js/weather.js", "js/setIcon.js"]
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "http://api.openweathermap.org/data/2.5/forecast?q=*"
+  ]
+}
